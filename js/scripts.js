@@ -1,7 +1,17 @@
-/*!
-* Start Bootstrap - Modern Business v5.0.7 (https://startbootstrap.com/template-overviews/modern-business)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-modern-business/blob/master/LICENSE)
-*/
-// This file is intentionally blank
-// Use this file to add JavaScript to your project
+$(function() {
+
+    $("#nav").load("navigation.html");
+
+    function activeNav() {
+        var pgurl = window.location.href.substring(window.location.href.lastIndexOf("/")+1);
+         $("#nav ul li a").each(function(){
+              if($(this).attr("href") == pgurl || $(this).attr("href") == '' )
+              $(this).addClass("active");
+         });
+    }
+
+    setTimeout(function() {
+        activeNav();
+    }, 100);
+
+});
