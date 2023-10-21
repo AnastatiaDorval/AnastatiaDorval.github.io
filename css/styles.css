@@ -2765,6 +2765,14 @@ textarea.form-control-lg {
   z-index: 4;
 }
 
+.divider {
+  height: 20px;
+}
+
+.small-divider {
+  height: 10px;
+}
+
 .btn {
   --bs-btn-padding-x: 0.75rem;
   --bs-btn-padding-y: 0.375rem;
@@ -2791,6 +2799,7 @@ textarea.form-control-lg {
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
+  min-width: 200px;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -8206,6 +8215,22 @@ textarea.form-control-lg {
 
 .bg-gradient {
   background-image: var(--bs-gradient) !important;
+}
+
+.bkg-gradient{
+  --bs-bg-opacity: ..05;
+  background-image: linear-gradient(to right, rgba(163,73,164,1), rgba(240,26,154,1), rgba(237,28,36,1), rgba(255,127,39,1), rgba(225,242,0,1), rgba(34,177,76,1), rgba(0,162,232,1), rgba(83,55,213,1));
+}
+
+.bkg-gradient-reverse{
+  background-image: linear-gradient(to left, rgba(163,73,164,1), rgba(240,26,154,1), rgba(237,28,36,1), rgba(255,127,39,1), rgba(225,242,0,1), rgba(34,177,76,1), rgba(0,162,232,1), rgba(83,55,213,1));
+}
+
+.gradient-text {
+  background-image: linear-gradient(to right, rgba(163,73,164,1), rgba(240,26,154,1), rgba(237,28,36,1), rgba(255,127,39,1), rgba(225,242,0,1), rgba(34,177,76,1), rgba(0,162,232,1), rgba(83,55,213,1));
+  -webkit-background-clip: text; /* Clip the background to the text */
+  background-clip: text; /* Clip the background to the text */
+  color: transparent; /* Make the text itself transparent */
 }
 
 .user-select-all {
